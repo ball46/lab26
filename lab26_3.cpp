@@ -5,7 +5,12 @@ using namespace std;
 
 int count(int a[],int b){
 	set<int> c;
-
+	int i = 0;
+	while(i < b){
+		c.insert(a[i]);
+		i++;
+	}
+	return c.size();
 }
 
 int main(){	
